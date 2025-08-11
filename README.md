@@ -18,7 +18,7 @@ Features:
 
 44 clinical variables recorded hourly (vital signs, labs, demographics)
 Target variable: SepsisLabel (0 = No Sepsis, 1 = Sepsis)
-~600,000 rows from ICU stays of multiple patients
+~more than 1.5 million rows from ICU stays of multiple patients
 
 Tech Stack
 
