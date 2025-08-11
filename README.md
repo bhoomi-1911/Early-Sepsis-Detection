@@ -13,7 +13,6 @@ Dataset
 This project uses the PhysioNet Computing in Cardiology Challenge 2019 dataset, originally sourced from:
 eICU Collaborative Research Database
 MIMIC-III Clinical Database
-Dataset link: PhysioNet Sepsis Challenge 2019
 
 Features:
 
