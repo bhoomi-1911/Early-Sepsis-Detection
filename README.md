@@ -80,25 +80,28 @@ Random Forest with Random Undersampling was selected because it struck the best 
 The model was further tuned (hyperparameter optimization) and refined with feature selection to maximize clinical reliability and performance.
 
 Model: Random Forest with Random Undersampling
-
-Accuracy: 91.7%
+Accuracy: 91.6%
 
 Confusion Matrix:
 
-[[10231   990]   → True Negatives, False Positives  
- [  183   697]] → False Negatives, True Positives
+[[10231  990]]  → True Negatives, False Positives  
+[[ 183   697]]  → False Negatives, True Positives
 
 
 Class-wise Metrics:
 
-Non-Sepsis (0): Precision = 0.98, Recall = 0.91, F1 = 0.95
+Non-Sepsis (0): Precision = 0.98, Recall = 0.91, F1-score = 0.94
 
-Sepsis (1): Precision = 0.41, Recall = 0.79, F1 = 0.54
+Sepsis (1): Precision = 0.41, Recall = 0.79, F1-score = 0.54
 
 Interpretation:
-
 The model correctly identified 697 out of 880 sepsis cases (recall = 79%), with only 183 false negatives.
+Precision for sepsis detection is moderate (41%), but this trade-off is clinically acceptable because minimizing missed sepsis cases is more important than reducing false alarms.
+Overall, the model achieves a strong balance of accuracy and clinical reliability.
 
-Precision for sepsis detection is moderate (41%), but this trade-off is acceptable because minimizing missed sepsis cases is more important than reducing false alarms.
 
-Overall, the model provides a strong balance of performance and clinical reliability.
+Deployment
+
+The Early Sepsis Prediction app is deployed using Streamlit, allowing real-time predictions through an interactive web interface. Users can input patient vitals and instantly see the likelihood of sepsis.
+
+The application can be run locally using Python and Streamlit, making it easy to use without complex server setups. All dependencies are listed in requirements.txt for quick installation.
