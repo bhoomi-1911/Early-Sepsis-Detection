@@ -105,3 +105,9 @@ Deployment
 The Early Sepsis Prediction app is deployed using Streamlit, allowing real-time predictions through an interactive web interface. Users can input patient vitals and instantly see the likelihood of sepsis.
 
 The application can be run locally using Python and Streamlit, making it easy to use without complex server setups. All dependencies are listed in requirements.txt for quick installation.
+
+Link
+
+## Live Demo
+Try the app here: [Early Sepsis Prediction]: https://early-sepsis-detection-z8ounzmxphwfvftctywpae.streamlit.app/
+
