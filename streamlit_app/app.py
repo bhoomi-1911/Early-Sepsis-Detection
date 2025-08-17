@@ -62,3 +62,4 @@ if st.button("Predict"):
         st.error(f"Sepsis Likely! (Probability: {probability:.2f})")
     else:
         st.success(f"Sepsis Unlikely (Probability: {probability:.2f})")
+
